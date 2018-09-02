@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deepGray"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/icon_menu"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bar_tab"
+        android:layout_below="@+id/bar_title">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/deepGray">
+
+        <TextView
+            android:id="@+id/button_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_tab_bg"
+            android:drawableTop="@mipmap/icon_sign_in"
+            android:text="@string/title_sign_in"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/button_schedule"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_tab_bg"
+            android:drawableTop="@mipmap/icon_schedule"
+            android:text="@string/title_schedule"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/button_create"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_tab_bg"
+            android:src="@mipmap/icon_create"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/button_information"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_tab_bg"
+            android:drawableTop="@mipmap/icon_information"
+            android:text="@string/title_information"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/button_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_tab_bg"
+            android:drawableTop="@mipmap/icon_mine"
+            android:text="@string/title_mine"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

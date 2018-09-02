@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">自律社区</string>
-    <string name="usernameTip">用户名/邮箱/手机号</string>
-    <string name="passwordTip">密码</string>
+
+    <string name="tip_username">用户名/邮箱/手机号</string>
+    <string name="tip_password">密码</string>
     <string name="login">登录</string>
+
+    <string name="title_sign_in">习惯</string>
+    <string name="title_schedule">日程</string>
+    <string name="title_information">资讯</string>
+    <string name="title_mine">我的</string>
+
+    <string name="signin">打卡</string>
+
 </resources>
